@@ -1,4 +1,5 @@
-﻿using OopsConcept.Inheritance;
+﻿using OopsConcept.Encapsuation;
+using OopsConcept.Inheritance;
 using OopsConcept.Polymorphism;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace OopsConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the option below:");
-            Console.WriteLine("\n1:class and object\n2:Inheritance\n3:Methodoverloading\n4:MethodOveriding");
+            Console.WriteLine("\n1:class and object\n2:Inheritance\n3:Methodoverloading\n4:MethodOveriding\n5:Encapsulation");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -39,6 +40,11 @@ namespace OopsConcept
                 case 4:
                     MethodOverriding or = new MethodOverriding();
                     or.Add(3,9);
+                    break;
+                case 5:
+                    Account account = new Account();
+                    account.SetBalance(100);
+                    account.GetBalance();
                     break;
             }
             Console.ReadLine();

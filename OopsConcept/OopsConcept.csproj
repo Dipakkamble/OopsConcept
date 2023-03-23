@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encapsuation\Account.cs" />
     <Compile Include="Inheritance\Animal.cs" />
     <Compile Include="Polymorphism\MethodOverloading.cs" />
     <Compile Include="Polymorphism\MethodOverriding.cs" />
